@@ -46,9 +46,9 @@ function wpkk_fortune_css() {
 			background-color: beige;
 			color: black;
 			margin: 0;
-			padding: 0.25em 0.5em;
+			padding: 0.25rem 0.5rem;
 			max-width: 15em;
-			max-height: 3.6rem;
+			max-height: 3.85rem;
 			line-height: 1.2rem;
 			font-size: 1rem;
 			overflow: auto;
@@ -63,7 +63,7 @@ function wpkk_fortune_css() {
 add_action('admin_head', 'wpkk_fortune_css');
 
 // Insert the CSS into the <head> of other pages, too
-add_action('wp_head', 'wpkk_fortune_head');
+add_action('wp_head', 'wpkk_fortune_css');
 
 // Show the fortune at the bottom of admin pages
 add_action('admin_footer', 'wpkk_fortune');
